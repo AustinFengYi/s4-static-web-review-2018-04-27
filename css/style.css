@@ -1,0 +1,439 @@
+/*CSS 基礎樣式設定*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/*稱為 pseudo-element (偽元素)，代表我們選的是這個元素的某個「部分」
+::after - 從選取元素的後面插入東西*/
+/*設定為 display: block;
+設定 clear: both;，可以一次清除 float: left; 和 float: right; 的浮動*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*設定 Header 區塊的 CSS 樣式*/
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  z-index: 100;
+}
+
+#logo{
+  float: left;
+}
+
+.nav{
+  float: right;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.nav li a{
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 12px;
+}
+
+/*設定 home_bg 區塊的 CSS 樣式*/
+.home_bg {
+  background-image: url(../home_bg_image/background-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.container_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container_table_cell{
+  /*設定 container_table_cell 為表格中的內容*/
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.container_table_cell h2{
+  padding-top: 30px;
+  font-size: 54px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.social_icons a{
+  color:#fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  line-height: 20px;
+  margin-right: 7px;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*About Me CSS 套版*/
+.about_me{
+  padding: 100px 0px;
+}
+
+.col-left, .col-right{
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+
+.personal-info h3{
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+.personal-info p {
+  color: #767676;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.skill{
+  margin: 30px auto;
+}
+
+.skill li{
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+
+.button-group .download-cv,.button-group .hire-me{
+  display: inline-block;
+}
+
+.button-group a{
+  border: 1px solid #333;
+  display: block;
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 10px 38px;
+  color: #000;
+}
+
+.button-group a:hover{
+  background: #000;
+  color: #fff;
+  /*必須加上各個常見瀏覽器的前綴字元*/
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.button-group .download-cv{
+  margin-right: 20px;
+}
+
+/*WHAT I OFFER CSS樣板*/
+.my_service {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.service-content{
+  width: 33%;
+  float:left;
+  padding: 0 10px;
+}
+
+.service-content i{
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-content h3{
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/*Resume CSS 套版*/
+.resume{
+  padding:100px 0;
+}
+
+.resume h2{
+  margin-bottom: 50px;
+}
+
+.resume-content-left,.resume-content-right{
+  width: 50%;
+  padding: 0px 15px;
+  float: left;
+}
+
+.resume-item-horizontal{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #767676;
+}
+
+.resume-item-horizontal:last-child{
+  border-bottom: 0;
+}
+
+.resume-subtitle h3{
+  font-size: 25px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding-left: 14px;
+}
+
+
+.work-experience{
+  display:inline-block;
+  background: #000;
+  color: #fff;
+  padding: 2px 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.experience-detail h4{
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.experience-detail h6{
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.experience-detail p{
+  color: #767676;
+  margin-bottom: 10px;
+}
+
+/*Quate CSS 套版*/
+.quote{
+  background-image: url(../home_bg_image/quate.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  
+}
+
+
+.quote-inner{
+  text-align: center;
+  padding: 100px 0px;
+}
+
+section:nth-child(6) {
+  padding: 0;
+}
+
+.quote-inner h3{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #fff;
+  
+}
+
+.quote-inner p{
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.quote-inner a{
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px 48px;
+  color: #fff;
+  margin-top: 25px;
+  letter-spacing: 2px;
+
+}
+
+/*Latest Work CSS 套版*/
+.latest-work{
+  padding: 100px 0 ;
+  background-color: #f7f7f7;
+}
+
+.col-item{
+  float: left;
+  width: 33%;
+  padding: 15px;
+}
+
+/*Contact CSS 套版*/
+.contact{
+  padding: 100px 0;
+}
+
+.contact-form{
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form .form-input:first-child,
+.contact-form .form-input:nth-child(2) {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+
+.contact-form .form-input:nth-child(3) {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.contact-form input.form-style {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+
+.contact-form .form-submit{
+  text-align: left;
+  padding:10px 15px;
+}
+
+.contact-form .form-submit input{
+  font-size: 20px;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 15px 50px;
+  margin-top: 15px;
+  cursor: pointer;
+  
+}
+
+.form-submit input:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -ms-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+}
+
+/*Footer CSS排版*/
+.footer{
+  background-color: #000;  
+  padding: 80px 0;
+  text-align: center;
+}
+
+.footer-content p{
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer-social-icon a{
+  color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
