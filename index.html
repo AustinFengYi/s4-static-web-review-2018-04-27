@@ -5,17 +5,29 @@
   <title>My Personal Static Website</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--你需要主動定義 viewport，才能讓 CSS 裡設定的 px 對應到物理上的設備螢幕像素-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <!--製作導覽列-->
   <header id="header">
     <div class="container">
+      <!--css的選單漢堡鈕-->
+      <button type="button" class="menu-button">
+      三
+      </button>
+      <!---->
+
       <nav>
         <div id="logo">
           <!--logo(80x40)-->
           <img src="img/logo.png" alt="">
         </div>
+
+        <!--checkbox切換漢堡選單的顯示或隱藏-->
+        <input type="checkbox" class="menu-button-checkbox">
+        <!---->
 
         <ul class="nav">
           <li><a href="#home">Home</a></li>
